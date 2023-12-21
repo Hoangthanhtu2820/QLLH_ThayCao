@@ -55,11 +55,11 @@ namespace QuanLyKhoaHoc
                 MaKhoaHoc_txt.ReadOnly = false; 
                 newObj.TenKhoaHoc = TenKhoaHoc_txt.Text;
                 newObj.ThoiGian = ThoiGian_txt.Text;
-                newObj.GioiHanSinhVien = Convert.ToInt32(GioiHanSinhVien_num.Text);
-                newObj.GioiHanGiangVien = Convert.ToInt32(GioiHanGiangVien_num.Text);
-                newObj.KinhPhiDongGop = Convert.ToInt32(KinhPhiDongGop_num.Text);
-                newObj.SoBuoiThucHanh = Convert.ToInt32(SoBuoiThucHanh_num.Text);
-                newObj.SoBuoiLyThuyet = Convert.ToInt32(SoBuoiLyThuyet_num.Text);
+                newObj.GioiHanSinhVien = Convert.ToInt32(GioiHanSinhVien_num.Value);
+                newObj.GioiHanGiangVien = Convert.ToInt32(GioiHanGiangVien_num.Value);
+                newObj.KinhPhiDongGop = Convert.ToInt32(KinhPhiDongGop_num.Value);
+                newObj.SoBuoiThucHanh = Convert.ToInt32(SoBuoiThucHanh_num.Value);
+                newObj.SoBuoiLyThuyet = Convert.ToInt32(SoBuoiLyThuyet_num.Value);
                 db.tbl_KhoaHocs.InsertOnSubmit(newObj);
                 db.SubmitChanges();
                 MessageBox.Show("Thêm khóa học thành công!");
