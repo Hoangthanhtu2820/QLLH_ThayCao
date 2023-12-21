@@ -306,6 +306,7 @@
             this.DSKhoaHoc_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSKhoaHoc_dgv.Location = new System.Drawing.Point(3, 3);
             this.DSKhoaHoc_dgv.Name = "DSKhoaHoc_dgv";
+            this.DSKhoaHoc_dgv.ReadOnly = true;
             this.DSKhoaHoc_dgv.RowHeadersWidth = 51;
             this.DSKhoaHoc_dgv.RowTemplate.Height = 24;
             this.DSKhoaHoc_dgv.Size = new System.Drawing.Size(554, 688);
@@ -321,6 +322,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.Name = "frm_QuanLyKhoaHoc";
+            this.Text = "x";
             this.Load += new System.EventHandler(this.frm_QuanLyKhoaHoc_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
